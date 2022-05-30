@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import themeColors from "../../styles/themeColors";
+import PropTypes from "prop-types";
 
 const EasyLifeButton = styled.button`
   border: none;
@@ -17,3 +18,8 @@ const EasyLifeButton = styled.button`
 `;
 
 export default EasyLifeButton;
+
+EasyLifeButton.propTypes = {
+  variant: PropTypes.oneOf(["primary", "secondary", "danger"]).isRequired,
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
+};

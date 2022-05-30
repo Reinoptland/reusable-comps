@@ -47,3 +47,7 @@ Improvements wanted
 - Same as intermediate (including BONUS)
 - Write less code
 - Less complexity, so no ...props, {...props}
+
+Cons
+
+- No more prop-types
