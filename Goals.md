@@ -2,8 +2,9 @@
 
 - [x] Button component
 - [x] Display different text
-- [ ] Display different styling (variants)
+- [x] Display different styling (variants)
 - [x] Display a spinner on the button (sometimes)
+- [x] When you click the button, something (could / should) happen
 
 ## Beginner example
 

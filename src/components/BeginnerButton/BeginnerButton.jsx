@@ -39,6 +39,7 @@ export default function BeginnerButton(props) {
         padding: padding,
         fontSize: fontSize,
       }}
+      onClick={props.clickFunction}
     >
       {props.displaySpinner ? "😵‍💫" : props.buttonText}
     </button>

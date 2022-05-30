@@ -7,9 +7,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BeginnerButton buttonText="Post!" displaySpinner={true} />
-        <BeginnerButton buttonText="Edit" size="lg" />
-        <BeginnerButton buttonText="Cancel" variant="secondary" />
+        <BeginnerButton
+          buttonText="Post!"
+          displaySpinner={true}
+          clickFunction={() => alert("post")}
+        />
+        <BeginnerButton
+          buttonText="Edit"
+          size="lg"
+          clickFunction={() => alert("edit")}
+        />
+        <BeginnerButton
+          buttonText="Cancel"
+          variant="secondary"
+          clickFunction={() => alert("hello")}
+        />
       </header>
       <header className="App-header">
         {/* Self closing, like <img /> */}
