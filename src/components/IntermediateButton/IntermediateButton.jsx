@@ -1,8 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import style from "./IntermediateButton.module.css";
 
 export default function IntermediateButton(props) {
-  return <button>{props.children}</button>;
+  return (
+    <button
+      className={`${style.btn} ${style[`btn--${props.variant}`]} ${
+        props.size ? style[`btn--size-${props.size}`] : ""
+      }`}
+    >
+      {props.children}
+    </button>
+  );
 }
 
 IntermediateButton.propTypes = {

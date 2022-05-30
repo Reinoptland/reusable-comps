@@ -1,0 +1,25 @@
+.btn {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.btn--primary {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn--secondary {
+  background-color: gray;
+  color: white;
+}
+
+.btn--danger {
+  background-color: firebrick;
+  color: black;
+}
+
+.btn--size-lg {
+  padding: 12px;
+  font-size: 20px;
+}

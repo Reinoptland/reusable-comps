@@ -28,11 +28,13 @@ Cons
 Improvements wanted
 
 - Less props, but still supporting all the usecases
-- Maybe use CSS 🤷
 - If the props are created, at least make it clear which props can be used
+- Maybe use CSS 🤷
 
 Approach
 
 - Use opening & closing tags with `props.children` for nesting content inside elements
+- `prop-types` to document which props exists
+- use `css-modules` we use props to apply classes (maybe conditionally)
 
 ## My approach
