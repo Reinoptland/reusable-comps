@@ -30,7 +30,11 @@ function App() {
         <IntermediateButton variant="secondary">
           Post! <a href="https://google.com">GOOGLE IT</a>
         </IntermediateButton>
-        <IntermediateButton variant="primary">
+        <IntermediateButton
+          variant="primary"
+          disabled={true}
+          onClick={() => alert("Hello")}
+        >
           {true ? <progress value={50} max={100} /> : "Edit!"}
         </IntermediateButton>
         <IntermediateButton variant="danger" size="lg">
