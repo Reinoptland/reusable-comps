@@ -13,15 +13,17 @@ function App() {
       </header>
       <header className="App-header">
         {/* Self closing, like <img /> */}
-        <IntermediateButton />
+        {/* <IntermediateButton /> */}
         {/* Make the button have opening tag, closing, like <button></button> */}
-        <IntermediateButton>
+        <IntermediateButton variant="secondary">
           Post! <a href="https://google.com">GOOGLE IT</a>
         </IntermediateButton>
-        <IntermediateButton>
+        <IntermediateButton variant="primary">
           {true ? <progress value={50} max={100} /> : "Edit!"}
         </IntermediateButton>
-        <IntermediateButton>Cancel!</IntermediateButton>
+        <IntermediateButton variant="danger" size="lg">
+          Cancel!
+        </IntermediateButton>
       </header>
     </div>
   );

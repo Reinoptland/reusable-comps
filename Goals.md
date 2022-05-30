@@ -2,7 +2,7 @@
 
 - [x] Button component
 - [x] Display different text
-- [x] Display different styling (variants)
+- [ ] Display different styling (variants)
 - [x] Display a spinner on the button (sometimes)
 
 ## Beginner example
@@ -28,8 +28,8 @@ Cons
 Improvements wanted
 
 - Less props, but still supporting all the usecases
-- If the props are created, at least make it clear which props can be used
 - Maybe use CSS 🤷
+- If the props are created, at least make it clear which props can be used
 
 Approach
 
