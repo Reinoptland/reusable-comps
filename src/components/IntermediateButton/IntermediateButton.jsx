@@ -2,17 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./IntermediateButton.module.css";
 
-export default function IntermediateButton(props) {
-  console.log("INTERMEDIATE PROPS:", props);
+export default function IntermediateButton({
+  variant,
+  size,
+  children,
+  ...otherProps // anything else: call it otherProps (...rest)
+}) {
+  // let variant = props.variant
+  console.log("INTERMEDIATE OTHER PROPS:", otherProps);
   return (
     <button
-      className={`${style.btn} ${style[`btn--${props.variant}`]} ${
-        props.size ? style[`btn--size-${props.size}`] : ""
+      {...otherProps} // pass on all the otherProps to the button (...spread)
+      className={`${style.btn} ${style[`btn--${variant}`]} ${
+        size ? style[`btn--size-${size}`] : ""
       }`}
-      onClick={props.onClick}
-      disabled={props.disabled}
     >
-      {props.children}
+      {children}
     </button>
   );
 }
@@ -20,5 +25,4 @@ export default function IntermediateButton(props) {
 IntermediateButton.propTypes = {
   variant: PropTypes.oneOf(["primary", "secondary", "danger"]).isRequired,
   size: PropTypes.oneOf(["sm", "md", "lg"]),
-  onClick: PropTypes.func,
 };

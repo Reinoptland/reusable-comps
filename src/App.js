@@ -37,7 +37,14 @@ function App() {
         >
           {true ? <progress value={50} max={100} /> : "Edit!"}
         </IntermediateButton>
-        <IntermediateButton variant="danger" size="lg">
+        <IntermediateButton
+          variant="danger"
+          size="lg"
+          type="reset"
+          onClick={() => alert("HELLO WORLD")}
+          onMouseOver={() => alert("HOVER??")}
+          className="BLA"
+        >
           Cancel!
         </IntermediateButton>
       </header>

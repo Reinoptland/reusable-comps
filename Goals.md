@@ -31,11 +31,13 @@ Improvements wanted
 - Less props, but still supporting all the usecases
 - If the props are created, at least make it clear which props can be used
 - Maybe use CSS 🤷
+- (BONUS): attributes like onClick, disabled, type etc can be used like normal
 
 Approach
 
 - Use opening & closing tags with `props.children` for nesting content inside elements
 - `prop-types` to document which props exists
 - use `css-modules` we use props to apply classes (maybe conditionally)
+- (BONUS) using {...otherProps} and `<button {...otherProps}>` so normal HTML attributes like onClick, disabled, type etc can be passed to the button (no other more rewriting HTML)
 
 ## My approach
