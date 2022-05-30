@@ -2,7 +2,7 @@
 
 - [x] Button component
 - [x] Display different text
-- [x] Display different styling (variants)
+- [ ] Display different styling (variants)
 - [x] Display a spinner on the button (sometimes)
 - [x] When you click the button, something (could / should) happen
 
@@ -41,3 +41,9 @@ Approach
 - (BONUS) using {...otherProps} and `<button {...otherProps}>` so normal HTML attributes like onClick, disabled, type etc can be passed to the button (no other more rewriting HTML)
 
 ## My approach
+
+Improvements wanted
+
+- Same as intermediate (including BONUS)
+- Write less code
+- Less complexity, so no ...props, {...props}
