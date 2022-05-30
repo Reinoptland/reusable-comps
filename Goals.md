@@ -1,8 +1,8 @@
 # Goals
 
 - [x] Button component
-- [ ] Display different text
-- [ ] Display different styling (variants)
+- [x] Display different text
+- [x] Display different styling (variants)
 - [ ] Display a spinner on the button (sometimes)
 
 ## Beginner example

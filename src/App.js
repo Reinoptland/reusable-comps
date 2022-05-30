@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BeginnerButton />
+        <BeginnerButton buttonText="Post!" displaySpinner={true} />
+        <BeginnerButton buttonText="Edit" size="lg" />
+        <BeginnerButton buttonText="Cancel" variant="secondary" />
       </header>
     </div>
   );
